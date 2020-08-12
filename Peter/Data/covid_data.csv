@@ -1,0 +1,345 @@
+year,month,state,total_cases,total_deaths
+2020,1,Arizona,1,0
+2020,1,California,3,0
+2020,1,Illinois,2,0
+2020,1,Washington,1,0
+2020,2,Arizona,1,0
+2020,2,California,28,0
+2020,2,Illinois,3,0
+2020,2,Massachusetts,1,0
+2020,2,Nebraska,13,0
+2020,2,Oregon,1,0
+2020,2,Texas,11,0
+2020,2,Utah,1,0
+2020,2,Washington,10,1
+2020,2,Wisconsin,1,0
+2020,3,Alabama,999,14
+2020,3,Alaska,133,2
+2020,3,Arizona,1298,24
+2020,3,Arkansas,564,8
+2020,3,California,8583,184
+2020,3,Colorado,2990,69
+2020,3,Connecticut,3128,69
+2020,3,Delaware,319,10
+2020,3,District of Columbia,495,9
+2020,3,Florida,6742,85
+2020,3,Georgia,4116,126
+2020,3,Guam,139,2
+2020,3,Hawaii,224,1
+2020,3,Idaho,526,9
+2020,3,Illinois,5992,107
+2020,3,Indiana,2177,61
+2020,3,Iowa,498,7
+2020,3,Kansas,435,10
+2020,3,Kentucky,590,18
+2020,3,Louisiana,5237,240
+2020,3,Maine,303,5
+2020,3,Maryland,1662,18
+2020,3,Massachusetts,6620,89
+2020,3,Michigan,7629,264
+2020,3,Minnesota,629,12
+2020,3,Mississippi,937,20
+2020,3,Missouri,1350,15
+2020,3,Montana,198,5
+2020,3,Nebraska,199,4
+2020,3,Nevada,1113,26
+2020,3,New Hampshire,367,3
+2020,3,New Jersey,18696,267
+2020,3,New Mexico,315,5
+2020,3,New York,76211,1929
+2020,3,North Carolina,1527,10
+2020,3,North Dakota,126,3
+2020,3,Northern Mariana Islands,2,0
+2020,3,Ohio,2199,55
+2020,3,Oklahoma,566,23
+2020,3,Oregon,690,18
+2020,3,Pennsylvania,4997,72
+2020,3,Puerto Rico,239,8
+2020,3,Rhode Island,488,8
+2020,3,South Carolina,1083,22
+2020,3,South Dakota,107,1
+2020,3,Tennessee,2049,13
+2020,3,Texas,3588,57
+2020,3,Utah,887,5
+2020,3,Vermont,293,13
+2020,3,Virgin Islands,30,0
+2020,3,Virginia,1249,27
+2020,3,Washington,5293,226
+2020,3,West Virginia,162,1
+2020,3,Wisconsin,1351,25
+2020,3,Wyoming,121,0
+2020,4,Alabama,7068,272
+2020,4,Alaska,353,7
+2020,4,Arizona,7648,320
+2020,4,Arkansas,3281,61
+2020,4,California,50470,2057
+2020,4,Colorado,15207,775
+2020,4,Connecticut,27700,2257
+2020,4,Delaware,4734,152
+2020,4,District of Columbia,4323,224
+2020,4,Florida,33683,1267
+2020,4,Georgia,25431,1121
+2020,4,Guam,1115,6
+2020,4,Hawaii,609,16
+2020,4,Idaho,2016,63
+2020,4,Illinois,52918,2361
+2020,4,Indiana,18099,1114
+2020,4,Iowa,7145,162
+2020,4,Kansas,4305,133
+2020,4,Kentucky,4708,240
+2020,4,Louisiana,28044,1905
+2020,4,Maine,1095,53
+2020,4,Maryland,21825,1139
+2020,4,Massachusetts,62205,3562
+2020,4,Michigan,41348,3788
+2020,4,Minnesota,5136,343
+2020,4,Mississippi,6815,261
+2020,4,Missouri,7563,341
+2020,4,Montana,452,16
+2020,4,Nebraska,4332,70
+2020,4,Nevada,5053,243
+2020,4,New Hampshire,2146,72
+2020,4,New Jersey,118652,7228
+2020,4,New Mexico,3411,123
+2020,4,New York,309696,23616
+2020,4,North Carolina,10507,385
+2020,4,North Dakota,1067,19
+2020,4,Northern Mariana Islands,14,2
+2020,4,Ohio,18027,975
+2020,4,Oklahoma,3618,222
+2020,4,Oregon,2510,103
+2020,4,Pennsylvania,48224,2580
+2020,4,Puerto Rico,1537,92
+2020,4,Rhode Island,8621,266
+2020,4,South Carolina,6095,244
+2020,4,South Dakota,2450,17
+2020,4,Tennessee,10506,200
+2020,4,Texas,29072,828
+2020,4,Utah,4672,46
+2020,4,Vermont,866,48
+2020,4,Virgin Islands,66,4
+2020,4,Virginia,15846,552
+2020,4,Washington,14814,822
+2020,4,West Virginia,1126,44
+2020,4,Wisconsin,6854,316
+2020,4,Wyoming,559,7
+2020,5,Alabama,17952,630
+2020,5,Alaska,469,8
+2020,5,Arizona,19936,906
+2020,5,Arkansas,7253,133
+2020,5,California,113114,4242
+2020,5,Colorado,26364,1445
+2020,5,Connecticut,42201,3944
+2020,5,Delaware,9498,366
+2020,5,District of Columbia,8801,466
+2020,5,Florida,56155,2450
+2020,5,Georgia,45051,2019
+2020,5,Guam,1144,6
+2020,5,Hawaii,642,17
+2020,5,Idaho,2855,82
+2020,5,Illinois,120588,5426
+2020,5,Indiana,35429,2134
+2020,5,Iowa,19621,537
+2020,5,Kansas,9878,211
+2020,5,Kentucky,9937,441
+2020,5,Louisiana,40021,2791
+2020,5,Maine,2325,89
+2020,5,Maryland,53456,2532
+2020,5,Massachusetts,96965,6846
+2020,5,Michigan,57355,5491
+2020,5,Minnesota,24860,1050
+2020,5,Mississippi,15501,734
+2020,5,Missouri,13297,784
+2020,5,Montana,515,17
+2020,5,Nebraska,14101,178
+2020,5,Nevada,8628,419
+2020,5,New Hampshire,4651,245
+2020,5,New Jersey,160445,11698
+2020,5,New Mexico,7689,356
+2020,5,New York,375575,29699
+2020,5,North Carolina,28686,911
+2020,5,North Dakota,2580,64
+2020,5,Northern Mariana Islands,22,2
+2020,5,Ohio,35513,2155
+2020,5,Oklahoma,6506,334
+2020,5,Oregon,4243,153
+2020,5,Pennsylvania,76218,5555
+2020,5,Puerto Rico,3776,136
+2020,5,Rhode Island,14928,718
+2020,5,South Carolina,11861,494
+2020,5,South Dakota,4993,62
+2020,5,Tennessee,22832,360
+2020,5,Texas,64974,1683
+2020,5,Utah,9829,113
+2020,5,Vermont,981,55
+2020,5,Virgin Islands,70,6
+2020,5,Virginia,44607,1375
+2020,5,Washington,22814,1126
+2020,5,West Virginia,2010,75
+2020,5,Wisconsin,18418,594
+2020,5,Wyoming,903,16
+2020,6,Alabama,38045,950
+2020,6,Alaska,1132,12
+2020,6,Arizona,79399,1645
+2020,6,Arkansas,20777,270
+2020,6,California,232153,6083
+2020,6,Colorado,32698,1690
+2020,6,Connecticut,46514,4322
+2020,6,Delaware,11474,509
+2020,6,District of Columbia,10327,551
+2020,6,Florida,152426,3504
+2020,6,Georgia,77280,2758
+2020,6,Guam,1228,6
+2020,6,Hawaii,901,18
+2020,6,Idaho,6124,92
+2020,6,Illinois,144661,7136
+2020,6,Indiana,46740,2640
+2020,6,Iowa,29152,717
+2020,6,Kansas,14629,276
+2020,6,Kentucky,15916,588
+2020,6,Louisiana,58203,3221
+2020,6,Maine,3253,105
+2020,6,Maryland,68152,3190
+2020,6,Massachusetts,108882,8095
+2020,6,Michigan,70850,6197
+2020,6,Minnesota,36338,1476
+2020,6,Mississippi,27248,1073
+2020,6,Missouri,22275,1037
+2020,6,Montana,967,22
+2020,6,Nebraska,19194,279
+2020,6,Nevada,18582,507
+2020,6,New Hampshire,5782,371
+2020,6,New Jersey,173521,15035
+2020,6,New Mexico,12147,497
+2020,6,New York,398142,31776
+2020,6,North Carolina,65062,1362
+2020,6,North Dakota,3585,88
+2020,6,Northern Mariana Islands,30,2
+2020,6,Ohio,51789,2863
+2020,6,Oklahoma,13757,387
+2020,6,Oregon,8695,210
+2020,6,Pennsylvania,91226,6695
+2020,6,Puerto Rico,7465,153
+2020,6,Rhode Island,16813,950
+2020,6,South Carolina,36399,739
+2020,6,South Dakota,6764,91
+2020,6,Tennessee,42815,597
+2020,6,Texas,166703,2482
+2020,6,Utah,22364,172
+2020,6,Vermont,1208,56
+2020,6,Virgin Islands,90,6
+2020,6,Virginia,62787,1763
+2020,6,Washington,34541,1333
+2020,6,West Virginia,2904,93
+2020,6,Wisconsin,31723,793
+2020,6,Wyoming,1487,20
+2020,7,Alabama,87723,1580
+2020,7,Alaska,3675,21
+2020,7,Arizona,174108,3695
+2020,7,Arkansas,42511,453
+2020,7,California,502273,9222
+2020,7,Colorado,46948,1841
+2020,7,Connecticut,49810,4432
+2020,7,Delaware,14788,585
+2020,7,District of Columbia,12126,585
+2020,7,Florida,470378,6842
+2020,7,Georgia,171342,3674
+2020,7,Guam,1325,6
+2020,7,Hawaii,2088,25
+2020,7,Idaho,20853,193
+2020,7,Illinois,180701,7703
+2020,7,Indiana,67800,2965
+2020,7,Iowa,44753,872
+2020,7,Kansas,28121,358
+2020,7,Kentucky,30981,753
+2020,7,Louisiana,116394,3949
+2020,7,Maine,3912,123
+2020,7,Maryland,88907,3493
+2020,7,Massachusetts,117612,8609
+2020,7,Michigan,90752,6453
+2020,7,Minnesota,54503,1640
+2020,7,Mississippi,58747,1663
+2020,7,Missouri,51045,1305
+2020,7,Montana,3977,60
+2020,7,Nebraska,26211,338
+2020,7,Nevada,48142,831
+2020,7,New Hampshire,6583,415
+2020,7,New Jersey,183535,15825
+2020,7,New Mexico,20600,642
+2020,7,New York,419723,32372
+2020,7,North Carolina,122433,1947
+2020,7,North Dakota,6473,107
+2020,7,Northern Mariana Islands,42,2
+2020,7,Ohio,91159,3489
+2020,7,Oklahoma,36456,541
+2020,7,Oregon,18510,325
+2020,7,Pennsylvania,116787,7261
+2020,7,Puerto Rico,16781,219
+2020,7,Rhode Island,19022,1007
+2020,7,South Carolina,89016,1712
+2020,7,South Dakota,8764,130
+2020,7,Tennessee,103144,1047
+2020,7,Texas,441767,7271
+2020,7,Utah,40258,308
+2020,7,Vermont,1414,57
+2020,7,Virgin Islands,406,8
+2020,7,Virginia,89888,2174
+2020,7,Washington,58726,1654
+2020,7,West Virginia,6642,116
+2020,7,Wisconsin,57020,943
+2020,7,Wyoming,2726,26
+2020,8,Alabama,103020,1797
+2020,8,Alaska,4537,24
+2020,8,Arizona,187634,4157
+2020,8,Arkansas,50028,555
+2020,8,California,574267,10460
+2020,8,Colorado,51104,1868
+2020,8,Connecticut,50567,4444
+2020,8,Delaware,15634,591
+2020,8,District of Columbia,12807,591
+2020,8,Florida,536953,8276
+2020,8,Georgia,202276,4138
+2020,8,Guam,1387,6
+2020,8,Hawaii,3615,33
+2020,8,Idaho,25267,239
+2020,8,Illinois,197326,7854
+2020,8,Indiana,76734,3044
+2020,8,Iowa,49164,935
+2020,8,Kansas,32094,387
+2020,8,Kentucky,36739,794
+2020,8,Louisiana,132079,4287
+2020,8,Maine,4049,125
+2020,8,Maryland,96821,3591
+2020,8,Massachusetts,121315,8741
+2020,8,Michigan,97472,6527
+2020,8,Minnesota,61557,1701
+2020,8,Mississippi,67649,1912
+2020,8,Missouri,60845,1397
+2020,8,Montana,5032,75
+2020,8,Nebraska,28696,354
+2020,8,Nevada,57022,963
+2020,8,New Hampshire,6840,419
+2020,8,New Jersey,186884,15878
+2020,8,New Mexico,22444,690
+2020,8,New York,426046,32431
+2020,8,North Carolina,137057,2198
+2020,8,North Dakota,7717,117
+2020,8,Northern Mariana Islands,49,2
+2020,8,Ohio,101731,3673
+2020,8,Oklahoma,43962,605
+2020,8,Oregon,21488,362
+2020,8,Pennsylvania,124269,7378
+2020,8,Puerto Rico,22821,279
+2020,8,Rhode Island,19934,1015
+2020,8,South Carolina,101159,2049
+2020,8,South Dakota,9663,146
+2020,8,Tennessee,120967,1223
+2020,8,Texas,514940,9058
+2020,8,Utah,44487,346
+2020,8,Vermont,1462,58
+2020,8,Virgin Islands,576,9
+2020,8,Virginia,100749,2327
+2020,8,Washington,66226,1781
+2020,8,West Virginia,7754,141
+2020,8,Wisconsin,65427,1009
+2020,8,Wyoming,3050,28
