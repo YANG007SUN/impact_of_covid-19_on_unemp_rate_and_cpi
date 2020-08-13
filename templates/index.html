@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coronavirus Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+</head>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="ticker-wrap">
+    <div class="ticker">
+      {% for news in covid["news"]%}
+      <a class="ticker__item" href="{{news['link']}}" target="_blank">{{news["title"]}}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/data">Dashboard</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<body>
+    <div class="covid_main">
+      <div class="title_container col-md-6">
+        <br><h1 class="main_title">Coronavirus Information Dashboard</h1><hr class="col-md-11" align="left">
+        <div class="col-md-12 headline">
+          <p>{{covid["headline"]}}</p>
+        </div><br>
+      </div><br>
+
+      <div class="content_container col-md-6">
+        <h4 class="us_situation">US Situation</h4><hr>
+        <div class="row">
+          <div class="col-md-4 entire_card">
+            <div class="card_value">{{covid["total_cases"]}}</div>
+            <div class="card_title">Confirmed Cases</div>
+          </div>
+          <div class="col-md-4 entire_card">
+            <div class="card_value">{{covid["total_deaths"]}}</div>
+            <div class="card_title">Deaths</div>
+          </div>
+          <div class="col-md-4 entire_card">
+            <div class="card_value">{{covid["death_rate"]}}</div>
+            <div class="card_title">Deaths Rate</div>
+          </div>
+        </div><hr><br>
+        
+        <h4 class="us_situation">Top 3 State (Confimed Cases)</h4><hr>
+        <div class="row">
+          {% for s in covid["top_3_confirmed"]%}
+          <div class="col-md-4 entire_card">
+            <div class="card_value">{{s["cases"]}}</div>
+            <div class="card_title">{{s["state"]}}</div>
+          </div>
+          {% endfor %}
+        </div><hr><br>
+
+        <h4 class="us_situation">Top 3 State (Deaths)</h4><hr>
+        <div class="row">
+          {% for s in covid["top_3_deaths"]%}
+          <div class="col-md-4 entire_card">
+            <div class="card_value">{{s["cases"]}}</div>
+            <div class="card_title">{{s["state"]}}</div>
+          </div>
+          {% endfor %}
+        </div><hr>
+      </div>
+      
+    </div>
+    
+
+    <br>
+    
+</body>
+
+
+
+</html>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+

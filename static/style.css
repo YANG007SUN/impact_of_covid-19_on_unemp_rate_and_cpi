@@ -1,0 +1,145 @@
+
+* {
+    font: inherit;
+}
+
+
+.navbar{
+    background-color: #E5E7E9;
+    color: white;
+    font-family: Arial;
+}
+
+.navbar-brand{
+    color: black;
+    font-family: Arial;
+}
+.nav-link{
+    color: black;
+    font-family: Arial;
+}
+
+.covid_main{
+    position: relative;
+    height: 850px;
+    padding: 20px;
+    margin: 0;
+    background-image: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/2020-06/covid.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.main_title{
+    font-size: 40px;
+    font-family: Arial;
+}
+
+.headline{
+    font-size: 14px;
+    padding-left: 0px;
+    margin-right: 100px;
+}
+
+.title_container{
+    background-color: #E5E7E9;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+/* .content_container{
+    padding-left: 10px;
+    height: 600px;
+    border-radius: 5px;
+} */
+
+.us_situation{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.card_title{
+    text-align: center;
+    
+}
+
+.card_value{
+    text-align: center;
+    font-size: 20px;
+}
+.entire_card:hover{
+    transform: scale(1.5);
+}
+
+.ticker-wrap {
+    position: relative;
+    bottom: 5px;
+      left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 2.5rem;
+    background-color: #E5E7E9;
+    box-sizing: content-box;
+  }
+
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 3rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 40s;
+}
+
+.ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 5rem;
+    font-size: 15px;
+    color: #6D6C6C ;
+  }
+
+  @-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+
+@media (max-width: 767px){
+    .covid_main{
+        position: relative;
+        height: 1200px;
+        padding: 20px;
+        margin: 0;
+        background-image: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/2020-06/covid.jpg");
+        background-attachment: fixed;
+        background-position: bottom center;
+        background-size: cover;
+    }
+
+}
