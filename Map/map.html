@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>US Covid Cases</title>
+	<title>US COVID Cases</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,20 @@
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+	<!-- bootstrap library -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<!--CSS for map -->
+	<link rel="stylesheet" href="map.css">
 
 	<style>
 		html, body {
@@ -30,17 +43,40 @@
 </head>
 <body>
 
+
+
+<!-- Dropdown for Month-Year -->
+<div id = "monthdropdown" class="dropdown">
+	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  <b>Click to Select Month </b>
+	</button>
+	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	  <a class="dropdown-item" href="#">Jan 2020</a>
+	  <a class="dropdown-item" href="#">Feb 2020</a>
+	  <a class="dropdown-item" href="#">Mar 2020</a>
+	  <a class="dropdown-item" href="#">April 2020</a>
+	  <a class="dropdown-item" href="#">May 2020</a>
+	  <a class="dropdown-item" href="#">June 2020</a>
+	  
+	</div>
+</div>
+
 <div id='map'></div>
 
+
+
+<!-- references the master covid data coming from 'us-state2.js' -->
 <script type="text/javascript" src="us-states2.js"></script>
+
 
 <script type="text/javascript">
 
     var map = L.map('map').setView([37.8, -96], 4);
 
-    //CHANGE HERE FOR MONTH DISPLAY:
-    // Jan = 0; Feb = 1, March = 2, April = 3, May = 4, June = 5, July = 6, August = 7
-    var data_index = 2; // initial month displayed - 0 = Jan
+    //CHANGE HERE FOR MONTH DISPLAY, currently starts at the end, June
+    
+	var data_index = 17; // initial month displayed is June 2020 
+	var info;
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
@@ -52,26 +88,33 @@
 		zoomOffset: -1
 	}).addTo(map);
 
+function init_map(data_index, first_load) {
 
 	// control that shows state info on hover
-	var info = L.control();
+	if (first_load != true){ 
+		info.remove()
+	}
+
+	info = L.control();
 
 	info.onAdd = function (map) {
 		this._div = L.DomUtil.create('div', 'info');
 		this.update();
 		return this._div;
 	};
-    // title of map / top right corner of map
+    // title of map / top right corner of map / covid cases per state
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>US Covid Cases Per State</h4>' +  (props ?
-			'<b>' + props.name + '</b><br />' + props.total_cases[data_index] + ' people'
-			: 'Hover over a state');
+		this._div.innerHTML = '<h4><b>US Covid Cases Per State</h4>' +  (props ?
+			'<b>' + props.name + '</b><br />' + props.total_cases[data_index] + '<b> Infected' + '</b><br />'+ props.total_deaths[data_index]+ '<b> Deaths' + '</b><br />'+ props.unempt_rate[data_index]+ '<b> Unemployment Rate'
+			: '<b> Hover over a state to get statistics');
 	};
 
+	
 	info.addTo(map);
 
 
-	// color grouping depending on covid cases
+
+	// color grouping depends on covid cases
 	function getColor(c) {
 		return c > 1000000 ? '#b8071c' :
 				c > 999999  ? '#fa4b61' :
@@ -113,9 +156,7 @@
     // Geojson structure and set-up:
     var geojson;
     
-    //to do:
-    // create drop down that changes the data index based on month selected
-    // call reset highlight to reset the data map style for each month selected
+
 
 	function resetHighlight(e) {
 		geojson.resetStyle(e.target);
@@ -140,6 +181,7 @@
 	}).addTo(map);
 
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
+	
 
     //legend
 	var legend = L.control({position: 'bottomright'});
@@ -164,7 +206,60 @@
 		return div;
 	};
 
-	legend.addTo(map);
+	if (first_load == true){
+		legend.addTo(map);
+	}
+	
+
+}
+
+	
+
+	init_map(data_index, true)
+
+	//CREATING DROP DOWN using event listener:
+
+	document.querySelectorAll(".dropdown-item").forEach(item => {
+	item.addEventListener('click', runEnter)
+	})
+
+	// Complete the event handler function for the dropdown function
+	function runEnter() {
+	
+		var datesindex = {
+			//mapping month to index
+			//all month/years will be keys in the dictionary
+			"Jan 2020" : 12,
+			"Feb 2020" : 13,
+	  		"Mar 2020" : 14,
+	 		"April 2020":15,
+			"May 2020": 16,
+			"June 2020": 17
+		}
+
+		console.log(this.innerHTML)
+		var index = datesindex[this.innerHTML]
+		init_map(index, false)
+
+	}
+
+	// Complete the event handler function for the state click function
+	//function clickState() {	
+
+		//var stateindex = {
+			//map state to click
+			//Enter all dimensions for each state?
+			//
+		//}
+
+		//console.log(this.innerHTML)
+		//var click = stateindex[this.innerHTML]
+		//init_map(index, false)
+	//}
+
+
+
+
 
 </script>
 
