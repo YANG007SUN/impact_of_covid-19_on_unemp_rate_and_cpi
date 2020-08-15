@@ -102,6 +102,8 @@ function init_map(data_index, first_load) {
 		this.update();
 		return this._div;
 	};
+
+	//info.on("click", clickState)
     // title of map / top right corner of map / covid cases per state
 	info.update = function (props) {
 		this._div.innerHTML = '<h4><b>US Covid Cases Per State</h4>' +  (props ?
@@ -162,11 +164,13 @@ function init_map(data_index, first_load) {
 		geojson.resetStyle(e.target);
 		info.update();
 	}
-
+	//Get the states name navigating through the target, feature, properties. Narrowing down to state 
 	function zoomToFeature(e) {
+		console.log(e.target.feature.properties.name)
+		
 		map.fitBounds(e.target.getBounds());
 	}
-
+	// when you click it zooms in on state
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
@@ -183,7 +187,7 @@ function init_map(data_index, first_load) {
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 	
 
-    //legend
+    //Legend
 	var legend = L.control({position: 'bottomright'});
 
 	legend.onAdd = function (map) {
@@ -213,7 +217,6 @@ function init_map(data_index, first_load) {
 
 }
 
-	
 
 	init_map(data_index, true)
 
@@ -222,7 +225,7 @@ function init_map(data_index, first_load) {
 	document.querySelectorAll(".dropdown-item").forEach(item => {
 	item.addEventListener('click', runEnter)
 	})
-
+	
 	// Complete the event handler function for the dropdown function
 	function runEnter() {
 	
@@ -239,23 +242,31 @@ function init_map(data_index, first_load) {
 
 		console.log(this.innerHTML)
 		var index = datesindex[this.innerHTML]
+		console.log(index)
 		init_map(index, false)
 
 	}
 
 	// Complete the event handler function for the state click function
-	//function clickState() {	
+		var statesindex = {}
+		console.log(statesData.features[0].properties.name)
+		console.log(statesData.features.length)
+		for (var i = 0; i< statesData.features.length; i++){
+			statesindex[statesData.features[i].properties.name] = i
+		}
+		console.log(statesindex)
+	function clickState() {	
+		var statesindex = {}
+		
+		for (var i = 0; i< statesData.features.length; i++){
+			statesindex[statesData.features[i].properties.name] = i
+		}
 
-		//var stateindex = {
-			//map state to click
-			//Enter all dimensions for each state?
-			//
-		//}
+		var index = statesindex[this.innerHTML]
+		console.log(index)
+		
 
-		//console.log(this.innerHTML)
-		//var click = stateindex[this.innerHTML]
-		//init_map(index, false)
-	//}
+	}
 
 
 
