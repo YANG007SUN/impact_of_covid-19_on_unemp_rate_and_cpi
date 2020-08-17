@@ -21,5 +21,8 @@ Webpage:
 -	Landing Page - includes Top Headlines, US Statistics
 -    Dashboard - includes US Map, Unemployement Rate (Line Chart), State Political Affiliation (Pie Chart)
 
-Observations:
+Key Takeaways:
+
+
+Sources:
 
