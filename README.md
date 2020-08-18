@@ -14,6 +14,9 @@ Timeframe:
 
 Visualizations:
 -	(A) US Map (geojson)
+<img src="http://127.0.0.1:5000/static/dashboard.html"
+     alt="covid map"
+     style="float: left" width='500'/>
 -	(B) Line Chart to display the Unemployment Rate Spike
 -	(C) Pie Chart to display Political Affiliation per state
 
