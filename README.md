@@ -22,7 +22,13 @@ Webpage:
 -    Dashboard - includes US Map, Unemployement Rate (Line Chart), State Political Affiliation (Pie Chart)
 
 Key Takeaways:
--    Correlation between 
+-    On Unemployment there was spike as the date approached March to April, once May came around unemployment began to stablize. Compared to Covid cases and Deaths as they continued to rise.
+-    Towards the beginning we noticed that the more dense a state was the more covid cases they had. This was particular for New York and gradually moved to California, however as more states began to re-open is when state political affiliation came into play. This can be seen with Texas and Florida as they where two of the first states to re-open and happened to swing red. 
+
+Next Steps:
+-    Scrub real time daily data compared to the monthly pull
+-    Dive into further statistical analysis to determine potential correlations between covid rates to political affiliation
+-    Look into regional areas vs. state since we were able to gather economic data that was categorized in that manner (ex. CPI, PPI, Housing Data)
 
 Sources:
 - US Map - John Hopkins Covid Data: https://github.com/CSSEGISandData/COVID-19
