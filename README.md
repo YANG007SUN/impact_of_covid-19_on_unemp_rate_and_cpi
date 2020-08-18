@@ -14,9 +14,6 @@ Timeframe:
 
 Visualizations:
 -	(A) US Map (geojson)
-<img src="http://127.0.0.1:5000/static/dashboard.html"
-     alt="covid map"
-     style="float: left" width='500'/>
 -	(B) Line Chart to display the Unemployment Rate Spike
 -	(C) Pie Chart to display Political Affiliation per state
 
@@ -25,7 +22,10 @@ Webpage:
 -    Dashboard - includes US Map, Unemployement Rate (Line Chart), State Political Affiliation (Pie Chart)
 
 Key Takeaways:
-
+-    Correlation between 
 
 Sources:
+- US Map - John Hopkins Covid Data: https://github.com/CSSEGISandData/COVID-19
+- State Political Affiliation - State Elections Offices: https://www.nytimes.com/elections/2016/results/president
+- Unemployment Data - US Bureau of Labor Statistics: https://www.bls.gov/charts/state-employment-and-unemployment/state-unemployment-rates-map.htm#
 
